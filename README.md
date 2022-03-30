@@ -1,10 +1,8 @@
 # Kickstarter Team Project
 
-This team went above and beyond to shape and support the architecture of the project, they also helped deployment of the related pipelines. The team also contributed meaningfully to aspects of the deployed project beyond Data Science, smoothed out conflicts, and significantly contributed to explaining the project to non-DS people beyond the team.
+This project utilizes a dataset of over 100,000 data points of kickstarter company data.  A neural network with a 91% accuracy score is trained and tuned to predict if a kickstarter company is successful.  The pre-trained model is saved and deployed to our custom-made flask app which will display predictions and data visualizations for the success status of kickstarter companies.  To facilitate processing speed, the initial dataset was converted to a mySQL database and in accessed via MongoDB in the flask app.  Additionally, the flask app is deployed to a Heroku server that anyone can access and generate kickstarter success predictions.
 
-The Kickstarter App Takes a dataset provided by Kaggle. The team used advanced cleaning, preprocessing, feature engineering, encoding, splitting, and scaling methods to model and train a neural network project. This app uses early stopping to prevent some of the over-fitting problems associated with these kinds of models; the training stops if the validation loss is not improving for three epochs and returns to the best weights the model had. We used class weights to get better performance from the model, based on the skew of the imbalanced classes.
-
-# Heroku API
+# Heroku APP
 
 Deployed URL: https://kickstarter-05.herokuapp.com/
 
